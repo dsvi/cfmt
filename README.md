@@ -48,7 +48,7 @@ template<class ...T>
 void cprint(std::string_view fmt, T&&... args);
 
 template<class ...T>
-void cprint(std::FILE *f, std::string_view fmt, fmt::format_args args);
+void cprint(std::FILE *f, std::string_view fmt, T&&... args);
 
 template<class ...T>
 std::string cformat(std::string_view fmt, T&&... args);
